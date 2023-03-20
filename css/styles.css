@@ -13,6 +13,12 @@
     --footer-link-color: rgba(255, 255, 255, 0.1);
 }
 
+header {
+    border-bottom: 1px solid var(--cornflower-color);
+    margin: auto;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 body {
     font-family: "Roboto", "Raleway";
     background-color: var(--white-color);
@@ -82,11 +88,6 @@ a {
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
-}
-
-.page-header {
-    border-bottom: 1px solid var(--cornflower-color);
-    margin: auto;
 }
 
 .main-page {
@@ -176,6 +177,8 @@ a {
     background-color: var(--navy-blue-color);
     padding-bottom: 188px;
     padding-top: 188px;
+    width: 1440px;
+    margin: 0, auto;
 }
 
 .text-button {
@@ -238,7 +241,6 @@ a {
 .items-portfolio:hover,
 .items-portfolio:focus {
     cursor: pointer;
-    width: 360px;
     border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -335,10 +337,10 @@ a {
     background-color: var(--cloud-color);
     border-radius: 4px;
     margin-bottom: 8px;
-}
-
-.img-futures {
-    margin: 24px 100px 24px 100px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .socials {
@@ -401,24 +403,24 @@ a {
     column-gap: 24px;
 }
 
-.company-logo {
-    display: block;
-    border: 1px solid var(--light-slate-color);
-    border-radius: 4px;
-}
-
-.company-logo:hover,
-.company-logo:focus {
-    border-color: var(--ocean-color);
-}
-
 .logo-link-company {
     display: flex;
+    outline: transparent;
+    border: 1px solid var(--light-slate-color);
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+
+.logo-link-company:hover,
+.logo-link-company:focus {
+    border-color: var(--ocean-color);
 }
 
 .svg-logo-company {
     fill: var(--bg-svg-customers-color);
-    margin: 16px 32px 16px 32px;
+    width: 168px;
+    height: 88px;
+    justify-content: center;
 }
 
 .svg-footer {
