@@ -7,6 +7,10 @@
     --cornflower-color: #E7E9FC;
     --main-page-color: #E5E5E5;
     --ocean-color: #404BBF;
+    --light-slate-color: #8E8F99;
+    --bg-svg-customers-color: #AFB1B8;
+    --bg-link-footer-color: #31D0AA;
+    --footer-link-color: #0000001A;
 }
 
 body {
@@ -163,6 +167,10 @@ a {
 }
 
 .hero-image {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: auto;
     color: var(--white-color);
     background-color: var(--navy-blue-color);
@@ -317,6 +325,48 @@ a {
     column-gap: 24px;
 }
 
+/* icons */
+.img-futures-bg {
+    background-color: var(--cloud-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.img-futures {
+    margin: 24px 100px 24px 100px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+
+}
+
+.socials-item {
+    margin-top: 12px;
+}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--iris-color);
+    border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background-color: var(--ocean-color);
+
+}
+
+.svg-team {
+    fill: var(--cloud-color);
+}
+
 .feature-title,
 .project-title {
     font-weight: 500;
@@ -341,7 +391,68 @@ a {
     max-width: 100%;
 }
 
+/* section customers company */
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.company-logo {
+    display: block;
+    border: 1px solid var(--light-slate-color);
+    border-radius: 4px;
+}
+
+.company-logo:hover,
+.company-logo:focus {
+    border-color: var(--ocean-color);
+}
+
+.logo-link-company {
+    display: flex;
+}
+
+.svg-logo-company {
+    fill: var(--bg-svg-customers-color);
+    margin: 16px 32px 16px 32px;
+}
+
+.logo-link-company:hover .svg-logo-company,
+.logo-link-company:focus .svg-logo-company {
+    fill: var(--ocean-color);
+
+}
+
 /* footer */
+.social-media {
+    color: var(--white-color);
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.socials-footer {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.socials-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bg-link-footer-color);
+}
+
+.socials-link-footer:hover,
+.socials-link-footer:focus {
+    background-color: var(--bg-link-footer-color);
+}
 
 .studio-white {
     color: var(--cloud-color);
