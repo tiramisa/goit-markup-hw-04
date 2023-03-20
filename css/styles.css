@@ -173,13 +173,12 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: auto;
     color: var(--white-color);
     background-color: var(--navy-blue-color);
     padding-bottom: 188px;
     padding-top: 188px;
     width: 1440px;
-    margin: 0, auto;
+    margin: 0 auto;
 }
 
 .text-button {
@@ -240,7 +239,7 @@ a {
 }
 
 .portfolio-list {
-    width: 368px;
+    width: 358px;
 }
 
 .items-portfolio:hover,
@@ -421,10 +420,13 @@ a {
     border-color: var(--ocean-color);
 }
 
-.svg-logo-company {
-    fill: var(--bg-svg-customers-color);
+.company-logo {
     width: 168px;
     height: 88px;
+}
+
+.svg-logo-company {
+    fill: var(--bg-svg-customers-color);
     justify-content: center;
 }
 
